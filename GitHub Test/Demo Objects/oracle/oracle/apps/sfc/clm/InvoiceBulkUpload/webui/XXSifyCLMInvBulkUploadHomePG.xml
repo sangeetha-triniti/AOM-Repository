@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pageLayoutRN" controllerClass="oracle.apps.sfc.clm.InvoiceBulkUpload.webui.XXSifyCLMInvBulkUploadHomePGCO" windowTitle="Sify CLM Invoice Bulk Upload Home" title="Sify CLM Invoice Bulk Upload Home" amDefName="oracle.apps.sfc.clm.InvoiceBulkUpload.server.XXSifyCLMInvBulkUploadAM">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="region10">
+               <ui:contents>
+                  <oa:messageLayout id="messageLayout1">
+                     <ui:contents>
+                        <oa:messageTextInput id="batchNoItem" prompt="Batch Number"/>
+                        <oa:messageLovInput id="vendorSearch" prompt="Supplier">
+                           <lovContents>
+                              <oa:listOfValues id="region9">
+                                 <ui:contents>
+                                    <oa:table name="region9" id="LmsSupplierLovVO1">
+                                       <ui:contents>
+                                          <oa:messageStyledText id="SupplierName" dataType="VARCHAR2" prompt="Supplier Name" viewName="LmsSupplierLovVO1" viewAttr="SupplierName" maximumLength="240" queryable="true" sortState="yes"/>
+                                       </ui:contents>
+                                    </oa:table>
+                                 </ui:contents>
+                              </oa:listOfValues>
+                           </lovContents>
+                           <lovMappings>
+                              <lovMap id="lovMap1" lovItem="SupplierName" resultTo="vendorSearch" criteriaFrom="vendorSearch"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageTextInput id="fromDateSearch" dataType="DATE" prompt="From Date"/>
+                        <oa:messageTextInput id="toDateSearch" dataType="DATE" prompt="To Date"/>
+                        <oa:rowLayout id="region11">
+                           <ui:contents>
+                              <oa:spacer id="item1" width="600" height="5"/>
+                              <oa:submitButton id="SearchBtn" text="Go" prompt="Go"/>
+                           </ui:contents>
+                        </oa:rowLayout>
+                     </ui:contents>
+                  </oa:messageLayout>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:table id="ClmInvoicesHomeVO" width="100%">
+               <ui:contents>
+                  <oa:messageStyledText id="StgBatchId" dataType="NUMBER" prompt="Batch Number" viewName="CLMInvoiceHomeVO1" viewAttr="StgBatchId" queryable="true"/>
+                  <oa:messageStyledText id="BandWidhReqNo" dataType="VARCHAR2" prompt="BandWidth Request No" viewName="CLMInvoiceHomeVO1" viewAttr="BandWidhReqId" maximumLength="100"/>
+                  <oa:messageStyledText id="LmsId2" dataType="NUMBER" prompt="CLM ID" viewName="CLMInvoiceHomeVO1" viewAttr="ClmId" sortState="descending"/>
+                  <oa:messageStyledText id="PoNumber" dataType="VARCHAR2" prompt="PO Number" viewName="CLMInvoiceHomeVO1" viewAttr="PoNumber" maximumLength="240"/>
+                  <oa:messageStyledText id="Supplier" dataType="VARCHAR2" prompt="Supplier" viewName="CLMInvoiceHomeVO1" viewAttr="Supplier" maximumLength="240" queryable="true"/>
+                  <oa:messageStyledText id="SupplierSite" dataType="VARCHAR2" prompt="Supplier Site" viewName="CLMInvoiceHomeVO1" viewAttr="SupplierSite" maximumLength="240"/>
+                  <oa:messageStyledText id="PoLineAmount" dataType="NUMBER" prompt="Po Line Amount" viewName="CLMInvoiceHomeVO1" viewAttr="PoLineAmount" maximumLength="15"/>
+                  <oa:messageStyledText id="LmsInvoiceNumber" dataType="VARCHAR2" prompt="CLM Invoice Number" viewName="CLMInvoiceHomeVO1" viewAttr="ClmInvoiceNumber" maximumLength="240"/>
+                  <oa:messageStyledText id="InvoiceDate" dataType="DATE" prompt="Invoice Date" viewName="CLMInvoiceHomeVO1" viewAttr="InvoiceDate"/>
+                  <oa:messageStyledText id="InvPeriodFromDate" dataType="DATE" prompt="Invoice Period From Date" viewName="CLMInvoiceHomeVO1" viewAttr="InvPeriodFromDate" queryable="true"/>
+                  <oa:messageStyledText id="InvPeriodToDate" dataType="DATE" prompt="Invoice Period To Date" viewName="CLMInvoiceHomeVO1" viewAttr="InvPeriodToDate" queryable="true"/>
+                  <oa:messageStyledText id="InvoiceAmount" dataType="NUMBER" prompt="Invoice Amount" viewName="CLMInvoiceHomeVO1" viewAttr="InvoiceAmount" maximumLength="15"/>
+                  <oa:messageStyledText id="invstatuswf" dataType="VARCHAR2" prompt="Workflow Status" viewName="CLMInvoiceHomeVO1" viewAttr="InvoiceWfStatus" maximumLength="240"/>
+                  <oa:messageStyledText id="invstatus" dataType="VARCHAR2" prompt="Invoice Status" viewName="CLMInvoiceHomeVO1" viewAttr="InvoiceStatus" maximumLength="240"/>
+                  <oa:messageStyledText id="cpid" dataType="NUMBER" prompt="Concurrent Request ID" viewName="CLMInvoiceHomeVO1" viewAttr="BandWidhReqId"/>
+                  <oa:messageStyledText id="errmsg" dataType="VARCHAR2" prompt="Error Message" viewName="CLMInvoiceHomeVO1" viewAttr="ErrorMsg" maximumLength="240"/>
+                  <oa:messageStyledText id="CommissionedDate" dataType="DATE" prompt="Commissioned Date" viewName="CLMInvoiceHomeVO1" viewAttr="CommissionedDate"/>
+                  <oa:messageStyledText id="SurrenderedDate" dataType="DATE" prompt="Surrendered Date" viewName="CLMInvoiceHomeVO1" viewAttr="SurrenderedDate"/>
+                  <oa:messageStyledText id="FromLocation3" dataType="VARCHAR2" prompt="From Location" viewName="CLMInvoiceHomeVO1" viewAttr="FromLocation" maximumLength="240" rendered="false"/>
+                  <oa:messageStyledText id="ToLocation2" dataType="VARCHAR2" prompt="To Location" viewName="CLMInvoiceHomeVO1" viewAttr="ToLocation" maximumLength="240" rendered="false"/>
+                  <oa:messageStyledText id="ItemCode" dataType="VARCHAR2" prompt="Item Code" viewName="CLMInvoiceHomeVO1" viewAttr="ItemCode" maximumLength="240"/>
+                  <oa:messageStyledText id="ItemDesc" dataType="VARCHAR2" prompt="Item Description" viewName="CLMInvoiceHomeVO1" viewAttr="ItemDesc" maximumLength="240" rendered="false"/>
+               </ui:contents>
+               <ui:tableActions>
+                  <oa:flowLayout id="region8">
+                     <ui:contents>
+                        <oa:submitButton id="StandardInvBtn" text="Standard Invoice Bulkload" prompt="Standard Invoice Bulkload"/>
+                        <oa:exportButton id="ExportBtn" exportAllRows="true" text="Export Data" viewName="CLMInvoiceHomeVO1"/>
+                     </ui:contents>
+                  </oa:flowLayout>
+               </ui:tableActions>
+            </oa:table>
+            <oa:pageButtonBar id="region7">
+               <ui:contents>
+                  <oa:submitButton id="cancelBtn" text="Back To Home" prompt="Back To Home"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>
