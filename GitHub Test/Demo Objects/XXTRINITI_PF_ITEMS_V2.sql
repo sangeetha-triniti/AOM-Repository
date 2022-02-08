@@ -1,0 +1,1 @@
+CREATE OR REPLACE VIEW XXTRINITI_PF_ITEMS_V2 as SELECT * FROM xxtriniti_pf_item_stg_3;
