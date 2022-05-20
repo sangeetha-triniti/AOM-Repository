@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="CLMInvBulkUploadStgEOVO"
+   SelectList="CLMInvBulkUploadStgEO.BAND_WIDH_REQ_ID, 
+       CLMInvBulkUploadStgEO.CLM_ID, 
+       CLMInvBulkUploadStgEO.PO_HDR_ID, 
+       CLMInvBulkUploadStgEO.PO_NUMBER, 
+       CLMInvBulkUploadStgEO.PO_LINE_ID, 
+       CLMInvBulkUploadStgEO.PO_LINE_NUMBER, 
+       CLMInvBulkUploadStgEO.INVOICE_DATE, 
+       CLMInvBulkUploadStgEO.INVOICE_AMOUNT, 
+       CLMInvBulkUploadStgEO.TAX_AMT, 
+       CLMInvBulkUploadStgEO.TOTAL_AMOUNT, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE1, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE2, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE3, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE4, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE5, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE6, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE7, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE8, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE9, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE10, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE11, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE12, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE13, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE14, 
+       CLMInvBulkUploadStgEO.ATTRIBUTE15, 
+       CLMInvBulkUploadStgEO.CREATION_DATE, 
+       CLMInvBulkUploadStgEO.CREATED_BY, 
+       CLMInvBulkUploadStgEO.LAST_UPDATE_DATE, 
+       CLMInvBulkUploadStgEO.LAST_UPDATED_BY, 
+       CLMInvBulkUploadStgEO.LAST_UPDATE_LOGIN, 
+       CLMInvBulkUploadStgEO.PO_APPROVAL_STATUS, 
+       CLMInvBulkUploadStgEO.INVOICE_STATUS, 
+       CLMInvBulkUploadStgEO.INVOICE_WF_STATUS, 
+       CLMInvBulkUploadStgEO.CLM_INVOICE_ID, 
+       CLMInvBulkUploadStgEO.CLM_INVOICE_NUMBER, 
+       CLMInvBulkUploadStgEO.EBS_INVOICE_NUMBER, 
+       CLMInvBulkUploadStgEO.EBS_INVOICE_ID, 
+       CLMInvBulkUploadStgEO.CLM_PAYMENT_HDR_ID, 
+       CLMInvBulkUploadStgEO.CLM_INVOICE_LINE_NO, 
+       CLMInvBulkUploadStgEO.FROM_LOCATION, 
+       CLMInvBulkUploadStgEO.TO_LOCATION, 
+       CLMInvBulkUploadStgEO.ITEM_KEY, 
+       CLMInvBulkUploadStgEO.APPROVER1, 
+       CLMInvBulkUploadStgEO.APPROVER2, 
+       CLMInvBulkUploadStgEO.SAVE_FLAG, 
+       CLMInvBulkUploadStgEO.ERROR_MSG, 
+       CLMInvBulkUploadStgEO.CONC_PROGRAM_ID, 
+       CLMInvBulkUploadStgEO.INVOICE_HDR_ID, 
+       CLMInvBulkUploadStgEO.INV_PERIOD_FROM_DATE, 
+       CLMInvBulkUploadStgEO.INV_PERIOD_TO_DATE, 
+       CLMInvBulkUploadStgEO.CIRCUIT_ID, 
+       CLMInvBulkUploadStgEO.PO_UOM, 
+       CLMInvBulkUploadStgEO.PO_TAX, 
+       CLMInvBulkUploadStgEO.ITEM_CODE, 
+       CLMInvBulkUploadStgEO.SUPPLIER, 
+       CLMInvBulkUploadStgEO.SUPPLIER_SITE, 
+       CLMInvBulkUploadStgEO.ITEM_ID, 
+       CLMInvBulkUploadStgEO.ITEM_TYPE, 
+       CLMInvBulkUploadStgEO.VENDOR_ID, 
+       CLMInvBulkUploadStgEO.VENDOR_SITE_ID, 
+       CLMInvBulkUploadStgEO.PO_VALID_FROM, 
+       CLMInvBulkUploadStgEO.PO_VALID_TO, 
+       CLMInvBulkUploadStgEO.COMMISSIONED_DATE, 
+       CLMInvBulkUploadStgEO.CAPACITY, 
+       CLMInvBulkUploadStgEO.CONVERSION_RATE, 
+       CLMInvBulkUploadStgEO.CHARGE_ACCOUNT, 
+       CLMInvBulkUploadStgEO.PO_AMOUNT, 
+       CLMInvBulkUploadStgEO.PO_LINE_AMOUNT, 
+       CLMInvBulkUploadStgEO.AMOUNT_PAID, 
+       CLMInvBulkUploadStgEO.BAL_AMT, 
+       CLMInvBulkUploadStgEO.INVOICE_TYPE, 
+       CLMInvBulkUploadStgEO.ADV_PERIOD, 
+       CLMInvBulkUploadStgEO.ADV_AMOUNT, 
+       CLMInvBulkUploadStgEO.ADV_CURRENCY, 
+       CLMInvBulkUploadStgEO.ADV_SUP_INVOICE_NO, 
+       CLMInvBulkUploadStgEO.ADV_SUP_INVOICE_DATE, 
+       CLMInvBulkUploadStgEO.ADV_VERIFIED, 
+       CLMInvBulkUploadStgEO.ADV_CREATE_INVOICE, 
+       CLMInvBulkUploadStgEO.ADV_INVOICE_NO, 
+       CLMInvBulkUploadStgEO.ACTIVITY, 
+       CLMInvBulkUploadStgEO.LINK_TYPE, 
+       CLMInvBulkUploadStgEO.SURRENDERED_DATE, 
+       CLMInvBulkUploadStgEO.PRO_COMMISSIONED_DATE, 
+       CLMInvBulkUploadStgEO.REMARKS, 
+       CLMInvBulkUploadStgEO.DIST_CODE_COMBINATION_ID, 
+       CLMInvBulkUploadStgEO.ADV_TAX_PERCENT, 
+       CLMInvBulkUploadStgEO.FROM_LOC_SNO, 
+       CLMInvBulkUploadStgEO.TO_LOC_SNO, 
+       CLMInvBulkUploadStgEO.ADV_REMARKS, 
+       CLMInvBulkUploadStgEO.LAST_INVOICE_DATE, 
+       CLMInvBulkUploadStgEO.FINAL_STATUS, 
+       CLMInvBulkUploadStgEO.CLM_CREATION_DATE, 
+       CLMInvBulkUploadStgEO.VENDOR_SITE_CURRENCY_CODE, 
+       CLMInvBulkUploadStgEO.APPROVED_DATE, 
+       CLMInvBulkUploadStgEO.BW_DISTANCE, 
+       CLMInvBulkUploadStgEO.BAND_WIDH_REQ_NO, 
+       CLMInvBulkUploadStgEO.QTY, 
+       CLMInvBulkUploadStgEO.ADV_STATUS, 
+       CLMInvBulkUploadStgEO.PAYMENT_STATUS, 
+       CLMInvBulkUploadStgEO.PAID_DATE, 
+       CLMInvBulkUploadStgEO.PAYMENT_DETAILS, 
+       CLMInvBulkUploadStgEO.PAYMENT_ID, 
+       CLMInvBulkUploadStgEO.EBS_PO_NUMBER, 
+       CLMInvBulkUploadStgEO.CLM_PO_NUMBER, 
+       CLMInvBulkUploadStgEO.EBS_PO_HEADER_ID, 
+       CLMInvBulkUploadStgEO.EBS_PO_LINE_ID, 
+       CLMInvBulkUploadStgEO.ITEM_DESC, 
+       CLMInvBulkUploadStgEO.PAYMENT_TERM, 
+       CLMInvBulkUploadStgEO.INV_AMT_REF, 
+       CLMInvBulkUploadStgEO.BATCH_NO, 
+       CLMInvBulkUploadStgEO.CGST_TAX_CODE, 
+       CLMInvBulkUploadStgEO.SGST_TAX_CODE, 
+       CLMInvBulkUploadStgEO.IGST_TAX_CODE, 
+       CLMInvBulkUploadStgEO.CGST_TAX_PER, 
+       CLMInvBulkUploadStgEO.SGST_TAX_PER, 
+       CLMInvBulkUploadStgEO.IGST_TAX_PER, 
+       CLMInvBulkUploadStgEO.CGST_TAX_AMT, 
+       CLMInvBulkUploadStgEO.SGST_TAX_AMT, 
+       CLMInvBulkUploadStgEO.IGST_TAX_AMT, 
+       CLMInvBulkUploadStgEO.STG_BATCH_ID, 
+       CLMInvBulkUploadStgEO.ROWID"
+   FromList="XXSIFY.XXSIFY_CLM_PAYMENT_INVOICE_STG CLMInvBulkUploadStgEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="oracle.apps.sfc.clm.InvoiceBulkUpload.server.CLMInvBulkUploadStgEOVORowImpl"
+   ComponentClass="oracle.apps.sfc.clm.InvoiceBulkUpload.server.CLMInvBulkUploadStgEOVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="CLMInvBulkUploadStgEO"
+      Entity="oracle.apps.sfc.clm.InvoiceBulkUpload.schema.server.CLMInvBulkUploadStgEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="BandWidhReqId"
+      EntityAttrName="BandWidhReqId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="BAND_WIDH_REQ_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmId"
+      EntityAttrName="ClmId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoHdrId"
+      EntityAttrName="PoHdrId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_HDR_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoNumber"
+      EntityAttrName="PoNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoLineId"
+      EntityAttrName="PoLineId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_LINE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoLineNumber"
+      EntityAttrName="PoLineNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_LINE_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceDate"
+      EntityAttrName="InvoiceDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceAmount"
+      EntityAttrName="InvoiceAmount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxAmt"
+      EntityAttrName="TaxAmt"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="TAX_AMT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TotalAmount"
+      EntityAttrName="TotalAmount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="TOTAL_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute1"
+      EntityAttrName="Attribute1"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute2"
+      EntityAttrName="Attribute2"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute3"
+      EntityAttrName="Attribute3"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute4"
+      EntityAttrName="Attribute4"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute5"
+      EntityAttrName="Attribute5"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute6"
+      EntityAttrName="Attribute6"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE6" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute7"
+      EntityAttrName="Attribute7"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE7" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute8"
+      EntityAttrName="Attribute8"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE8" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute9"
+      EntityAttrName="Attribute9"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE9" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute10"
+      EntityAttrName="Attribute10"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE10" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute11"
+      EntityAttrName="Attribute11"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE11" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute12"
+      EntityAttrName="Attribute12"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE12" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute13"
+      EntityAttrName="Attribute13"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE13" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute14"
+      EntityAttrName="Attribute14"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE14" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute15"
+      EntityAttrName="Attribute15"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ATTRIBUTE15" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoApprovalStatus"
+      EntityAttrName="PoApprovalStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_APPROVAL_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceStatus"
+      EntityAttrName="InvoiceStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceWfStatus"
+      EntityAttrName="InvoiceWfStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_WF_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmInvoiceId"
+      EntityAttrName="ClmInvoiceId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_INVOICE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmInvoiceNumber"
+      EntityAttrName="ClmInvoiceNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_INVOICE_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EbsInvoiceNumber"
+      EntityAttrName="EbsInvoiceNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="EBS_INVOICE_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EbsInvoiceId"
+      EntityAttrName="EbsInvoiceId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="EBS_INVOICE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmPaymentHdrId"
+      EntityAttrName="ClmPaymentHdrId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_PAYMENT_HDR_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmInvoiceLineNo"
+      EntityAttrName="ClmInvoiceLineNo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_INVOICE_LINE_NO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FromLocation"
+      EntityAttrName="FromLocation"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="FROM_LOCATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ToLocation"
+      EntityAttrName="ToLocation"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="TO_LOCATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ItemKey"
+      EntityAttrName="ItemKey"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ITEM_KEY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Approver1"
+      EntityAttrName="Approver1"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="APPROVER1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Approver2"
+      EntityAttrName="Approver2"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="APPROVER2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SaveFlag"
+      EntityAttrName="SaveFlag"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SAVE_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ErrorMsg"
+      EntityAttrName="ErrorMsg"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ERROR_MSG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ConcProgramId"
+      EntityAttrName="ConcProgramId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CONC_PROGRAM_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceHdrId"
+      EntityAttrName="InvoiceHdrId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_HDR_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvPeriodFromDate"
+      EntityAttrName="InvPeriodFromDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INV_PERIOD_FROM_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvPeriodToDate"
+      EntityAttrName="InvPeriodToDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INV_PERIOD_TO_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CircuitId"
+      EntityAttrName="CircuitId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CIRCUIT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoUom"
+      EntityAttrName="PoUom"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_UOM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoTax"
+      EntityAttrName="PoTax"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_TAX" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ItemCode"
+      EntityAttrName="ItemCode"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ITEM_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Supplier"
+      EntityAttrName="Supplier"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SUPPLIER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierSite"
+      EntityAttrName="SupplierSite"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SUPPLIER_SITE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ItemId"
+      EntityAttrName="ItemId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ITEM_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ItemType"
+      EntityAttrName="ItemType"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ITEM_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorId"
+      EntityAttrName="VendorId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="VENDOR_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorSiteId"
+      EntityAttrName="VendorSiteId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="VENDOR_SITE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoValidFrom"
+      EntityAttrName="PoValidFrom"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_VALID_FROM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoValidTo"
+      EntityAttrName="PoValidTo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_VALID_TO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CommissionedDate"
+      EntityAttrName="CommissionedDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="COMMISSIONED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Capacity"
+      EntityAttrName="Capacity"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CAPACITY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ConversionRate"
+      EntityAttrName="ConversionRate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CONVERSION_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ChargeAccount"
+      EntityAttrName="ChargeAccount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CHARGE_ACCOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoAmount"
+      EntityAttrName="PoAmount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoLineAmount"
+      EntityAttrName="PoLineAmount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PO_LINE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AmountPaid"
+      EntityAttrName="AmountPaid"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="AMOUNT_PAID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BalAmt"
+      EntityAttrName="BalAmt"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="BAL_AMT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceType"
+      EntityAttrName="InvoiceType"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INVOICE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvPeriod"
+      EntityAttrName="AdvPeriod"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_PERIOD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvAmount"
+      EntityAttrName="AdvAmount"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvCurrency"
+      EntityAttrName="AdvCurrency"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_CURRENCY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvSupInvoiceNo"
+      EntityAttrName="AdvSupInvoiceNo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_SUP_INVOICE_NO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvSupInvoiceDate"
+      EntityAttrName="AdvSupInvoiceDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_SUP_INVOICE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvVerified"
+      EntityAttrName="AdvVerified"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_VERIFIED" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvCreateInvoice"
+      EntityAttrName="AdvCreateInvoice"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_CREATE_INVOICE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvInvoiceNo"
+      EntityAttrName="AdvInvoiceNo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_INVOICE_NO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Activity"
+      EntityAttrName="Activity"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ACTIVITY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LinkType"
+      EntityAttrName="LinkType"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="LINK_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SurrenderedDate"
+      EntityAttrName="SurrenderedDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SURRENDERED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProCommissionedDate"
+      EntityAttrName="ProCommissionedDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PRO_COMMISSIONED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Remarks"
+      EntityAttrName="Remarks"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="REMARKS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DistCodeCombinationId"
+      EntityAttrName="DistCodeCombinationId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="DIST_CODE_COMBINATION_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvTaxPercent"
+      EntityAttrName="AdvTaxPercent"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_TAX_PERCENT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FromLocSno"
+      EntityAttrName="FromLocSno"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="FROM_LOC_SNO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ToLocSno"
+      EntityAttrName="ToLocSno"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="TO_LOC_SNO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvRemarks"
+      EntityAttrName="AdvRemarks"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_REMARKS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastInvoiceDate"
+      EntityAttrName="LastInvoiceDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="LAST_INVOICE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FinalStatus"
+      EntityAttrName="FinalStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="FINAL_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmCreationDate"
+      EntityAttrName="ClmCreationDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorSiteCurrencyCode"
+      EntityAttrName="VendorSiteCurrencyCode"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="VENDOR_SITE_CURRENCY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovedDate"
+      EntityAttrName="ApprovedDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="APPROVED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BwDistance"
+      EntityAttrName="BwDistance"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="BW_DISTANCE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BandWidhReqNo"
+      EntityAttrName="BandWidhReqNo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="BAND_WIDH_REQ_NO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Qty"
+      EntityAttrName="Qty"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="QTY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AdvStatus"
+      EntityAttrName="AdvStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ADV_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentStatus"
+      EntityAttrName="PaymentStatus"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PAYMENT_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaidDate"
+      EntityAttrName="PaidDate"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PAID_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentDetails"
+      EntityAttrName="PaymentDetails"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PAYMENT_DETAILS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentId"
+      EntityAttrName="PaymentId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PAYMENT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EbsPoNumber"
+      EntityAttrName="EbsPoNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="EBS_PO_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ClmPoNumber"
+      EntityAttrName="ClmPoNumber"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CLM_PO_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EbsPoHeaderId"
+      EntityAttrName="EbsPoHeaderId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="EBS_PO_HEADER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EbsPoLineId"
+      EntityAttrName="EbsPoLineId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="EBS_PO_LINE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ItemDesc"
+      EntityAttrName="ItemDesc"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ITEM_DESC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentTerm"
+      EntityAttrName="PaymentTerm"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="PAYMENT_TERM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvAmtRef"
+      EntityAttrName="InvAmtRef"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="INV_AMT_REF" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BatchNo"
+      EntityAttrName="BatchNo"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="BATCH_NO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CgstTaxCode"
+      EntityAttrName="CgstTaxCode"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CGST_TAX_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SgstTaxCode"
+      EntityAttrName="SgstTaxCode"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SGST_TAX_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IgstTaxCode"
+      EntityAttrName="IgstTaxCode"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="IGST_TAX_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CgstTaxPer"
+      EntityAttrName="CgstTaxPer"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CGST_TAX_PER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SgstTaxPer"
+      EntityAttrName="SgstTaxPer"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SGST_TAX_PER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IgstTaxPer"
+      EntityAttrName="IgstTaxPer"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="IGST_TAX_PER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CgstTaxAmt"
+      EntityAttrName="CgstTaxAmt"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="CGST_TAX_AMT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SgstTaxAmt"
+      EntityAttrName="SgstTaxAmt"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="SGST_TAX_AMT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IgstTaxAmt"
+      EntityAttrName="IgstTaxAmt"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="IGST_TAX_AMT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StgBatchId"
+      EntityAttrName="StgBatchId"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="STG_BATCH_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RowID"
+      IsUpdateable="false"
+      EntityAttrName="RowID"
+      EntityUsage="CLMInvBulkUploadStgEO"
+      AliasName="ROWID" >
+   </ViewAttribute>
+</ViewObject>
