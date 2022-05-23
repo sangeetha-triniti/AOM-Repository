@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pageLayoutRN" controllerClass="oracle.apps.sfc.clm.InvoiceBulkUpload.webui.XXSifyCLMInvCreditBulkUploadPGCO" windowTitle="Sify CLM Credit Bulkload" title="Sify CLM Credit Bulkload" amDefName="oracle.apps.sfc.clm.InvoiceBulkUpload.server.XXSifyCLMInvCreditBulkUploadAM">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:labeledFieldLayout id="region2">
+               <ui:contents>
+                  <oa:messageLovInput id="supplierLov" prompt="Supplier">
+                     <lovContents>
+                        <oa:listOfValues id="region8">
+                           <ui:contents>
+                              <oa:table name="region8" id="CLMSuppLovVO1">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="SupplierName1" dataType="VARCHAR2" prompt="SupplierName" viewName="CLMSuppLovVO1" viewAttr="SupplierName" maximumLength="240" queryable="true"/>
+                                 </ui:contents>
+                              </oa:table>
+                           </ui:contents>
+                        </oa:listOfValues>
+                     </lovContents>
+                     <lovMappings>
+                        <lovMap id="lovMap4" lovItem="SupplierName1" resultTo="supplierLov" criteriaFrom="supplierLov"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+               </ui:contents>
+            </oa:labeledFieldLayout>
+            <oa:rowLayout id="region6">
+               <ui:contents>
+                  <oa:spacer id="item1" width="500"/>
+                  <oa:submitButton id="RunBtn" text="Run Report And Download Template" prompt="Run Report And Download Template"/>
+               </ui:contents>
+            </oa:rowLayout>
+            <oa:header id="DownloadRN" text="Download Data Template" rendered="false">
+               <ui:contents>
+                  <oa:submitButton id="DownloadBtn" text="Download Template" prompt="Download Template" unvalidated="true"/>
+               </ui:contents>
+            </oa:header>
+            <oa:spacer id="SapceVal" height="20"/>
+            <oa:tip id="tipId" styleClass="OraErrorText" text="Please Upload File in Microsoft Excel 97-2003(.xls) Format" rendered="false"/>
+            <oa:tip id="tipId1" styleClass="OraErrorText" text="Please Make Sure Date Cell Formats Are in DD-Mon-YYYY ( Ex: 7-Feb-2018 ) format." rendered="false"/>
+            <oa:header id="UploadRN" text="Upload Data Template" rendered="true">
+               <ui:contents>
+                  <oa:messageFileUpload id="UploadItem" prompt="Upload Template Here :"/>
+                  <oa:button id="FireUploadEvent" text="Upload And Submit" prompt="Upload And Submit" unvalidated="true" disabled="false" rendered="true" destination="">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="UploadDataEvent" id="fireAction1"/>
+                     </ui:primaryClientAction>
+                  </oa:button>
+                  <oa:spacer id="Spacer" height="5"/>
+               </ui:contents>
+            </oa:header>
+            <oa:header id="ErrRG" text="Error Details">
+               <ui:contents>
+                  <oa:table id="LmsCreditErrVO1">
+                     <ui:contents>
+                        <oa:messageTextInput id="BatchId" dataType="NUMBER" prompt="Batch Id" viewName="CLMCreditErrVO1" viewAttr="BatchId" readOnly="true"/>
+                        <oa:messageTextInput id="InvNum" viewName="CLMCreditErrVO1" viewAttr="Attribute1" prompt="Invoice Number" readOnly="true"/>
+                        <oa:messageTextInput id="ErrorMsg" dataType="VARCHAR2" prompt="Error Msg" viewName="CLMCreditErrVO1" viewAttr="ErrorMsg" maximumLength="500" readOnly="true" columns="50"/>
+                     </ui:contents>
+                  </oa:table>
+               </ui:contents>
+            </oa:header>
+            <oa:pageButtonBar id="region7">
+               <ui:contents>
+                  <oa:submitButton id="submiApprovalBtn" text="Submit For Approval" prompt="Submit For Approval" rendered="false"/>
+                  <oa:submitButton id="backBtn" text="Go Back" prompt="Go Back"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>
