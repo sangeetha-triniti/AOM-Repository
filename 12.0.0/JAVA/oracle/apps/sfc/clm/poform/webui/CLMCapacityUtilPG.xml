@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="region1" windowTitle="Capacity Utilization" title="Capacity Utilization" amDefName="oracle.apps.sfc.clm.poform.server.CLMCreatePoAM" controllerClass="oracle.apps.sfc.clm.poform.webui.CLMCapacityUtilPGCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:pageButtonBar id="region3">
+               <ui:contents>
+                  <oa:submitButton id="SaveBtn" text="Save" prompt="Save"/>
+                  <oa:submitButton id="BackBtn" text="Cancel" prompt="Cancel"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+            <oa:table id="CLMCapacityUtilEOVO" text="" width="70%">
+               <ui:contents>
+                  <oa:messageStyledText id="ClmId" dataType="NUMBER" prompt="ClmId" viewName="CLMCapacityUtilEOVO" viewAttr="ClmId"/>
+                  <oa:messageStyledText id="LinkType" dataType="VARCHAR2" prompt="LinkType" viewName="CLMCapacityUtilEOVO" viewAttr="LinkType" maximumLength="100"/>
+                  <oa:messageStyledText id="Jan" dataType="NUMBER" prompt="January(%)" viewName="CLMCapacityUtilEOVO" viewAttr="Jan"/>
+                  <oa:messageStyledText id="Feb" dataType="NUMBER" prompt="February(%)" viewName="CLMCapacityUtilEOVO" viewAttr="Feb"/>
+                  <oa:messageStyledText id="Mar" dataType="NUMBER" prompt="March (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Mar"/>
+                  <oa:messageStyledText id="Apr" dataType="NUMBER" prompt="April (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Apr"/>
+                  <oa:messageStyledText id="May" dataType="NUMBER" prompt="May (%)" viewName="CLMCapacityUtilEOVO" viewAttr="May"/>
+                  <oa:messageStyledText id="Jun" dataType="NUMBER" prompt="Jun (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Jun"/>
+                  <oa:messageStyledText id="Jul" dataType="NUMBER" prompt="July (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Jul"/>
+                  <oa:messageStyledText id="Aug" dataType="NUMBER" prompt="August (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Aug"/>
+                  <oa:messageStyledText id="Sep" dataType="NUMBER" prompt="September (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Sep"/>
+                  <oa:messageStyledText id="Oct" dataType="NUMBER" prompt="October (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Oct"/>
+                  <oa:messageStyledText id="Nov" dataType="NUMBER" prompt="November (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Nov"/>
+                  <oa:messageStyledText id="Dec" dataType="NUMBER" prompt="Dec (%)" viewName="CLMCapacityUtilEOVO" viewAttr="Dec"/>
+               </ui:contents>
+            </oa:table>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>
