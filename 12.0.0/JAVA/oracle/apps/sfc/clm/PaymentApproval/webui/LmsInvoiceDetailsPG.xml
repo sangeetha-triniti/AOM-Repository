@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pageLayoutRN" amDefName="oracle.apps.sfc.clm.PaymentApproval.server.xxsifyPaymentApprovalAM" windowTitle="Invoice Details" title="Invoice Details" controllerClass="oracle.apps.sfc.clm.PaymentApproval.webui.LmsInvoiceDetailsCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:table id="ClmInvDetailsVO" width="100%">
+               <ui:contents>
+                  <oa:messageStyledText id="ClmId" dataType="NUMBER" prompt="Clm Id" viewName="CLMInvDetailsVO" viewAttr="ClmId"/>
+                  <oa:messageStyledText id="PoNumber" dataType="VARCHAR2" prompt="Po Number" viewName="CLMInvDetailsVO" viewAttr="PoNumber" maximumLength="240"/>
+                  <oa:messageStyledText id="Supplier" dataType="VARCHAR2" prompt="Supplier" viewName="CLMInvDetailsVO" viewAttr="Supplier" maximumLength="240"/>
+                  <oa:messageStyledText id="SupplierSite" dataType="VARCHAR2" prompt="Supplier Site" viewName="CLMInvDetailsVO" viewAttr="SupplierSite" maximumLength="240"/>
+                  <oa:messageStyledText id="ClmInvoiceNumber" dataType="VARCHAR2" prompt="Invoice Number" viewName="CLMInvDetailsVO" viewAttr="ClmInvoiceNumber" maximumLength="240"/>
+                  <oa:messageStyledText id="InvoiceDate" dataType="DATE" prompt="Invoice Date" viewName="CLMInvDetailsVO" viewAttr="InvoiceDate"/>
+                  <oa:messageStyledText id="InvPeriodFromDate" dataType="DATE" prompt="Invoice Period From Date" viewName="CLMInvDetailsVO" viewAttr="InvPeriodFromDate"/>
+                  <oa:messageStyledText id="InvPeriodToDate" dataType="DATE" prompt="Invoice Period To Date" viewName="CLMInvDetailsVO" viewAttr="InvPeriodToDate"/>
+                  <oa:messageStyledText id="InvoiceAmount" dataType="NUMBER" prompt="Invoice Amount" viewName="CLMInvDetailsVO" viewAttr="InvoiceAmount" maximumLength="15"/>
+                  <oa:messageStyledText id="FromLocation" dataType="VARCHAR2" prompt="From Location" viewName="CLMInvDetailsVO" viewAttr="FromLocation" maximumLength="240"/>
+                  <oa:messageStyledText id="ToLocation" dataType="VARCHAR2" prompt="ToLocation" viewName="CLMInvDetailsVO" viewAttr="ToLocation" maximumLength="240"/>
+                  <oa:messageStyledText id="ItemCode" dataType="VARCHAR2" prompt="Item Code" viewName="CLMInvDetailsVO" viewAttr="ItemCode" maximumLength="240"/>
+                  <oa:messageStyledText id="CommissionedDate" dataType="DATE" prompt="Commissioned Date" viewName="CLMInvDetailsVO" viewAttr="CommissionedDate"/>
+                  <oa:messageStyledText id="SurrenderedDate" dataType="DATE" prompt="Surrendered Date" viewName="CLMInvDetailsVO" viewAttr="SurrenderedDate"/>
+                  <oa:messageStyledText id="PoLineAmount" dataType="NUMBER" prompt="Po Line Amount" viewName="CLMInvDetailsVOq" viewAttr="PoLineAmount" maximumLength="15"/>
+                  <oa:messageStyledText id="InvoiceType" dataType="VARCHAR2" prompt="Invoice Type" viewName="CLMInvDetailsVO" viewAttr="InvoiceType" maximumLength="100"/>
+                  <oa:messageStyledText id="Remarks" dataType="VARCHAR2" prompt="Remarks" viewName="CLMInvDetailsVO" viewAttr="Attribute15" maximumLength="100"/>
+               </ui:contents>
+            </oa:table>
+            <oa:pageButtonBar id="region1">
+               <ui:contents>
+                  <oa:submitButton id="backBtn" text="Close" prompt="Close"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>
