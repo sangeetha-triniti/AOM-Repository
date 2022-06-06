@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pageLayoutRN" amDefName="oracle.apps.sfc.clm.PaymentApproval.server.xxsifyPaymentApprovalAM" windowTitle="Approval Page" title="Approval Page" controllerClass="oracle.apps.sfc.clm.PaymentApproval.webui.xxsifyPaymentApprovalCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:labeledFieldLayout id="region21">
+               <ui:contents>
+                  <oa:messageTextInput id="clmid" prompt="Clm Id"/>
+               </ui:contents>
+            </oa:labeledFieldLayout>
+            <oa:rowLayout id="region6">
+               <ui:contents>
+                  <oa:spacer id="item1" width="520"/>
+                  <oa:submitButton id="searchBtn" text="Go" prompt="Go"/>
+               </ui:contents>
+            </oa:rowLayout>
+            <oa:spacer id="spacer1" height="5"/>
+            <oa:table id="xxsifySearchVO" width="100%">
+               <ui:contents>
+                  <oa:messageStyledText id="BandWidhReqId" dataType="VARCHAR2" prompt="Bandwidth Req No" viewName="CLMSearchNewVO1" viewAttr="BandWidhReqNo" maximumLength="240"/>
+                  <oa:messageStyledText id="ClmId" dataType="VARCHAR2" prompt="CLM ID" viewName="CLMSearchNewVO1" viewAttr="ClmId" maximumLength="240" sortState="yes"/>
+                  <oa:messageStyledText id="PoNo" dataType="NUMBER" prompt="PO Number" viewName="CLMSearchNewVO1" viewAttr="PoNumber"/>
+                  <oa:messageStyledText id="Supplier" dataType="VARCHAR2" prompt="Vendor Name" viewName="CLMSearchNewVO1" viewAttr="Supplier"/>
+                  <oa:messageStyledText id="invoiceType" dataType="VARCHAR2" prompt="Invoice Type" viewName="CLMSearchNewVO1" viewAttr="InvoiceType" maximumLength="240" sortState="yes"/>
+                  <oa:link id="InvoiceNumber" viewName="CLMSearchNewVO1" viewAttr="ClmInvoiceNumber" destination="OA.jsp?page=/oracle/apps/sfc/clm/PaymentApproval/webui/ClmInvoiceDetailsPG&amp;retainAM=Y&amp;param1={@ClmId}&amp;param2={@ClmInvoiceNumber}" text="Invoice Number" styleClass="OraLinkText"/>
+                  <oa:messageStyledText id="InvoiceDate" dataType="DATE" prompt="Invoice Date" viewName="CLMSearchNewVO1" viewAttr="InvoiceDate"/>
+                  <oa:messageStyledText id="InvoiceAmount" dataType="NUMBER" prompt="Invoice Total Amount" viewName="CLMSearchNewVO1" viewAttr="InvTotal" maximumLength="15"/>
+                  <oa:messageStyledText id="InvoiceWfStatus" dataType="VARCHAR2" prompt="Invoice Status" viewName="CLMSearchNewVO1" viewAttr="InvoiceWfStatus" maximumLength="240"/>
+                  <oa:messageDownload id="item2" dataType="BLOB" viewName="CLMSearchNewVO1" viewAttr="AttachedFileName" prompt="AttachedFile" fileContentType="Contenttype" contentViewAttributeName="AttachedFile"/>
+               </ui:contents>
+               <ui:tableSelection>
+                  <oa:multipleSelection id="multipleSelection11" viewName="CLMSearchNewVO1" viewAttr="approveSelectFlag"/>
+               </ui:tableSelection>
+            </oa:table>
+            <oa:spacer id="spacer" height="5"/>
+            <oa:messageTextInput id="reasonId" prompt="Reason" columns="50" rows="5"/>
+            <oa:pageButtonBar id="region2">
+               <ui:contents>
+                  <oa:submitButton id="ApproveBtn" text="Approve" prompt="Approve"/>
+                  <oa:submitButton id="RejectBtn" text="Reject" prompt="Reject"/>
+                  <oa:submitButton id="cancelBtn" text="Cancel" prompt="Cancel"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>
