@@ -1,0 +1,144 @@
+# $Header$
+
+# dbdrv: exec fnd bin FNDLOAD bin &phase=dat checkfile:~PROD:~PATH:~FILE &ui_apps 0 Y UPLOAD @QA:patch/115/import/qltchars.lct @~PROD:~PATH/~FILE
+LANGUAGE = "US"
+LDRCONFIG = "qltchars.lct 120.3"
+
+#Source Database R1224DEV
+
+#RELEASE_NAME 12.2.4
+
+# -- Begin Entity Definitions -- 
+
+DEFINE QA_CHARS
+  CTX   OWNER                           VARCHAR2(4000)
+  BASE  LAST_UPDATE_DATE                VARCHAR2(20)
+  KEY   CHAR_ID                         VARCHAR2(40)
+  TRANS NAME                            VARCHAR2(30)
+  BASE  CHAR_TYPE_CODE                  VARCHAR2(30)
+  BASE  CHAR_CONTEXT_FLAG               VARCHAR2(40)
+  TRANS PROMPT                          VARCHAR2(30)
+  TRANS DATA_ENTRY_HINT                 VARCHAR2(240)
+  BASE  DATATYPE                        VARCHAR2(40)
+  BASE  DISPLAY_LENGTH                  VARCHAR2(40)
+  BASE  DECIMAL_PRECISION               VARCHAR2(40)
+  TRANS DEFAULT_VALUE                   VARCHAR2(2000)
+  BASE  DEFAULT_VALUE_ID                VARCHAR2(40)
+  BASE  MANDATORY_FLAG                  VARCHAR2(40)
+  BASE  UOM_CODE                        VARCHAR2(3)
+  BASE  TARGET_VALUE                    VARCHAR2(150)
+  BASE  UPPER_SPEC_LIMIT                VARCHAR2(150)
+  BASE  LOWER_SPEC_LIMIT                VARCHAR2(150)
+  BASE  UPPER_REASONABLE_LIMIT          VARCHAR2(150)
+  BASE  LOWER_REASONABLE_LIMIT          VARCHAR2(150)
+  BASE  UPPER_USER_DEFINED_LIMIT        VARCHAR2(150)
+  BASE  LOWER_USER_DEFINED_LIMIT        VARCHAR2(150)
+  BASE  HARDCODED_COLUMN                VARCHAR2(30)
+  BASE  DEVELOPER_NAME                  VARCHAR2(30)
+  BASE  SQL_VALIDATION_STRING           VARCHAR2(1500)
+  BASE  ENABLED_FLAG                    VARCHAR2(40)
+  BASE  VALUES_EXIST_FLAG               VARCHAR2(40)
+  BASE  DEPENDENT_CHAR_ID               VARCHAR2(40)
+  BASE  FK_LOOKUP_TYPE                  VARCHAR2(40)
+  BASE  FK_TABLE_NAME                   VARCHAR2(30)
+  BASE  FK_TABLE_SHORT_NAME             VARCHAR2(5)
+  BASE  PK_ID                           VARCHAR2(30)
+  BASE  FK_ID                           VARCHAR2(30)
+  BASE  PK_ID2                          VARCHAR2(30)
+  BASE  FK_ID2                          VARCHAR2(30)
+  BASE  PK_ID3                          VARCHAR2(30)
+  BASE  FK_ID3                          VARCHAR2(30)
+  BASE  FK_MEANING                      VARCHAR2(30)
+  BASE  FK_DESCRIPTION                  VARCHAR2(30)
+  BASE  FK_ADD_WHERE                    VARCHAR2(255)
+  BASE  ATTRIBUTE_CATEGORY              VARCHAR2(30)
+  BASE  ATTRIBUTE1                      VARCHAR2(150)
+  BASE  ATTRIBUTE2                      VARCHAR2(150)
+  BASE  ATTRIBUTE3                      VARCHAR2(150)
+  BASE  ATTRIBUTE4                      VARCHAR2(150)
+  BASE  ATTRIBUTE5                      VARCHAR2(150)
+  BASE  ATTRIBUTE6                      VARCHAR2(150)
+  BASE  ATTRIBUTE7                      VARCHAR2(150)
+  BASE  ATTRIBUTE8                      VARCHAR2(150)
+  BASE  ATTRIBUTE9                      VARCHAR2(150)
+  BASE  ATTRIBUTE10                     VARCHAR2(150)
+  BASE  ATTRIBUTE11                     VARCHAR2(150)
+  BASE  ATTRIBUTE12                     VARCHAR2(150)
+  BASE  ATTRIBUTE13                     VARCHAR2(150)
+  BASE  ATTRIBUTE14                     VARCHAR2(150)
+  BASE  ATTRIBUTE15                     VARCHAR2(150)
+  BASE  DEPENDENT_ELEMENT               VARCHAR2(1)
+
+  DEFINE QA_CHAR_VALUE_LOOKUPS
+    CTX   OWNER                           VARCHAR2(4000)
+    BASE  LAST_UPDATE_DATE                VARCHAR2(20)
+    KEY   SHORT_CODE                      VARCHAR2(150)
+    TRANS DESCRIPTION                     VARCHAR2(150)
+    BASE  SHORT_CODE_ID                   VARCHAR2(40)
+    BASE  ATTRIBUTE_CATEGORY              VARCHAR2(30)
+    BASE  ATTRIBUTE1                      VARCHAR2(150)
+    BASE  ATTRIBUTE2                      VARCHAR2(150)
+    BASE  ATTRIBUTE3                      VARCHAR2(150)
+    BASE  ATTRIBUTE4                      VARCHAR2(150)
+    BASE  ATTRIBUTE5                      VARCHAR2(150)
+    BASE  ATTRIBUTE6                      VARCHAR2(150)
+    BASE  ATTRIBUTE7                      VARCHAR2(150)
+    BASE  ATTRIBUTE8                      VARCHAR2(150)
+    BASE  ATTRIBUTE9                      VARCHAR2(150)
+    BASE  ATTRIBUTE10                     VARCHAR2(150)
+    BASE  ATTRIBUTE11                     VARCHAR2(150)
+    BASE  ATTRIBUTE12                     VARCHAR2(150)
+    BASE  ATTRIBUTE13                     VARCHAR2(150)
+    BASE  ATTRIBUTE14                     VARCHAR2(150)
+    BASE  ATTRIBUTE15                     VARCHAR2(150)
+  END QA_CHAR_VALUE_LOOKUPS
+END QA_CHARS
+
+# -- End Entity Definitions -- 
+
+
+BEGIN QA_CHARS "104"
+  OWNER = "MFG"
+  LAST_UPDATE_DATE = "2015/04/10"
+  NAME = "Test Status"
+  CHAR_TYPE_CODE = "ATTRIBUTE"
+  CHAR_CONTEXT_FLAG = "1"
+  PROMPT = "Test Result"
+  DATATYPE = "1"
+  DISPLAY_LENGTH = "10"
+  MANDATORY_FLAG = "2"
+  ENABLED_FLAG = "1"
+  VALUES_EXIST_FLAG = "1"
+
+  BEGIN QA_CHAR_VALUE_LOOKUPS "10"
+    OWNER = "MFG"
+    LAST_UPDATE_DATE = "1997/04/30"
+    DESCRIPTION = "Accept"
+  END QA_CHAR_VALUE_LOOKUPS
+  
+  BEGIN QA_CHAR_VALUE_LOOKUPS "20"
+    OWNER = "MFG"
+    LAST_UPDATE_DATE = "1997/04/30"
+    DESCRIPTION = "Reject"
+  END QA_CHAR_VALUE_LOOKUPS
+  
+  BEGIN QA_CHAR_VALUE_LOOKUPS "30"
+    OWNER = "MFG"
+    LAST_UPDATE_DATE = "1997/04/30"
+    DESCRIPTION = "Hold"
+  END QA_CHAR_VALUE_LOOKUPS
+  
+  BEGIN QA_CHAR_VALUE_LOOKUPS "40"
+    OWNER = "MFG"
+    LAST_UPDATE_DATE = "1997/04/30"
+    DESCRIPTION = "Partial Accept"
+  END QA_CHAR_VALUE_LOOKUPS
+  
+  BEGIN QA_CHAR_VALUE_LOOKUPS "50"
+    OWNER = "MFG"
+    LAST_UPDATE_DATE = "1997/04/30"
+    DESCRIPTION = "Scrap"
+  END QA_CHAR_VALUE_LOOKUPS
+  
+END QA_CHARS
+
